@@ -1,0 +1,286 @@
+.maincontainer {
+    position: relative;
+    width: 100%;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.containertwo {
+    display: flex;
+    width: 395px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.largebox {
+    width: 372px;
+    height: 372px;
+    border: 3px #60A7D8 solid;
+    display: flex;
+    position: relative;
+}
+
+.flipshirtbox {
+    width: 30px;
+    height: 30px;
+    border-left: 3px #60A7D8 solid;
+    border-bottom: 3px #60A7D8 solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.flipshirtbox:hover {
+    cursor: pointer;
+}
+
+.flipshirticon {
+  position: absolute;
+  padding: 5px 0px 0px 6px;
+  font-size: 20px;
+  color: #60A7D8;
+}
+
+.shirtpic {
+    width: 83%;
+    height: 83%;
+    padding: 31px;
+}
+
+.allsmall {
+    width: 72px;
+    height: 60px;
+    position: relative;
+    border-left: 3px #60A7D8 solid;
+    border-bottom: 3px #60A7D8 solid;
+    background-color: white;
+}
+
+.icons {
+    position: absolute;
+    padding: 18px 0px 0px 26px;
+    font-size: 23px;
+    color: #60A7D8;
+}
+
+.smallboxone:hover {
+    background-color: #60A7D8;
+    cursor: pointer;
+}
+
+.smallboxone:hover .refresh {
+    color: white;
+}
+
+.smallboxtwo:hover {
+    background-color: #60A7D8;
+    cursor: pointer;
+}
+
+.smallboxtwo:hover .heart {
+    color: white;
+}
+
+.extralarge {
+    font-family: sans-serif;
+    margin: -236px 0px -5px 26px;
+    font-size: 18px;
+    color: #60A7D8;
+}
+
+.smallboxthree:hover {
+    background-color: #60A7D8;
+    cursor: pointer;
+}
+
+.smallboxthree:hover .extralarge {
+    color: white;
+}
+
+.allsquareicons {
+    position: absolute;
+    margin: -85px 10px 150px 20px;
+    font-size: 38px;
+    color: #60A7D8;
+}
+
+#squareiconblue {
+    color: #60A7D8;
+}
+
+#squareiconpink {
+    color: pink;
+}
+
+#squareiconorange {
+    color: orange;
+}
+
+.smallboxfour:hover {
+    background-color: #60A7D8;
+    cursor: pointer;
+}
+
+.smallboxfour:hover #squareiconblue {
+    color: white;
+}
+
+.smallboxfive {
+    border-right: 3px #60A7D8 solid;
+    cursor: pointer;
+    outline: none;
+}
+
+.smallboxfive:hover {
+    background-color: #60A7D8;
+}
+
+.smallboxfive:hover .cart {
+    color: white;
+}
+
+.submenuone {
+    border: 3px #60A7D8 solid;
+    background-color: white;
+    width: 89px;
+    height: 210px;
+    position: relative;
+    right: 11px;
+    bottom: 285px;
+    transition: transform 400ms ease, opacity 400ms ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tshirtXL {
+    width: 48px;
+    height: 36px;
+    margin: auto;
+}
+
+.tshirtL {
+    width: 44px;
+    height: 33px;
+    margin: auto;
+}
+
+.tshirtM {
+    width: 40px;
+    height: 30px;
+    margin: auto;
+}
+
+.tshirtS {
+    width: 36px;
+    height: 27px;
+    margin: auto;
+}
+
+.smallboxthree:hover .submenuone {
+    transform: translate(0, 26px);
+    opacity: 100;
+}
+
+.submenutwo {
+    border: 3px #60A7D8 solid;
+    background-color: white;
+    width: 89px;
+    height: 89px;
+    position: relative;
+    right: 12px;
+    bottom: 124px;
+    transition: transform 400ms ease, opacity 400ms ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.shirtcolor {
+    width: 30px;
+    height: 30px;
+}
+
+.shirtcolorblue {
+    background-color: #60A7D8;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.shirtcolorpink {
+    background-color: pink;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.shirtcolororange {
+    background-color: orange;
+    margin-left: 5px;
+}
+
+.shirtcolorgreen {
+    background-color: green;
+    margin-right: 5px;
+}
+
+.smallboxfour:hover .submenutwo {
+    transform: translate(0, 26px);
+    opacity: 100;
+}
+
+.rectanglebox {
+    width: 372px;
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    font-family: sans-serif;
+    color: #60A7D8;
+    font-size: 20px;
+}
+
+.savemytrees {
+    padding-left: 2px;
+    padding-right: 205px;
+}
+
+.naturelover {
+    padding-left: 2px;
+    padding-right: 218px;
+}
+
+.forrestwalk {
+    padding-left: 2px;
+    padding-right: 223px;
+}
