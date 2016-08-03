@@ -30,35 +30,17 @@ ul {
     width: 395px;
     flex-wrap: wrap;
     margin: auto;
+    border: 3px #60A7D8 solid;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .largebox {
-    width: 372px;
-    height: 372px;
-    border: 3px #60A7D8 solid;
+    width: 100%;
+    height: 60%;
     display: flex;
     position: relative;
-}
 
-.flipshirtbox {
-    width: 30px;
-    height: 30px;
-    border-left: 3px #60A7D8 solid;
-    border-bottom: 3px #60A7D8 solid;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.flipshirtbox:hover {
-    cursor: pointer;
-}
-
-.flipshirticon {
-  position: absolute;
-  padding: 5px 0px 0px 6px;
-  font-size: 20px;
-  color: #60A7D8;
 }
 
 .shirtpic {
@@ -67,13 +49,30 @@ ul {
     padding: 31px;
 }
 
+.text {
+    width: 100%;
+    font-family: sans-serif;
+    color: #60A7D8;
+    font-size: 30px;
+    text-align: center;
+}
+
+p:nth-child(2) {
+    font-size: 22px;
+    padding: 0px 12px 5px 12px;
+}
+
+.small-with-border {
+    border-left: 3px #60A7D8 solid;
+}
+
 .allsmall {
-    width: 72px;
+    width: 79px;
     height: 60px;
     position: relative;
-    border-left: 3px #60A7D8 solid;
-    border-bottom: 3px #60A7D8 solid;
+    border-top: 3px #60A7D8 solid;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .icons {
@@ -103,7 +102,7 @@ ul {
 
 .extralarge {
     font-family: sans-serif;
-    margin: -236px 0px -5px 26px;
+    margin: 20px 0px -5px 26px;
     font-size: 18px;
     color: #60A7D8;
 }
@@ -113,27 +112,8 @@ ul {
     cursor: pointer;
 }
 
-.smallboxthree:hover .extralarge {
+.smallboxthree:hover #squareiconblue {
     color: white;
-}
-
-.allsquareicons {
-    position: absolute;
-    margin: -85px 10px 150px 20px;
-    font-size: 38px;
-    color: #60A7D8;
-}
-
-#squareiconblue {
-    color: #60A7D8;
-}
-
-#squareiconpink {
-    color: pink;
-}
-
-#squareiconorange {
-    color: orange;
 }
 
 .smallboxfour:hover {
@@ -141,12 +121,18 @@ ul {
     cursor: pointer;
 }
 
-.smallboxfour:hover #squareiconblue {
+.smallboxfour:hover .extralarge {
     color: white;
 }
 
+.allsquareicons {
+    position: absolute;
+    margin: -218px 5px 150px 23px;
+    font-size: 38px;
+    color: #60A7D8;
+}
+
 .smallboxfive {
-    border-right: 3px #60A7D8 solid;
     cursor: pointer;
     outline: none;
 }
@@ -202,7 +188,7 @@ ul {
     margin: auto;
 }
 
-.smallboxthree:hover .submenuone {
+.smallboxfour:hover .submenuone {
     transform: translate(0, 26px);
     opacity: 100;
 }
@@ -210,16 +196,15 @@ ul {
 .submenutwo {
     border: 3px #60A7D8 solid;
     background-color: white;
-    width: 89px;
-    height: 89px;
+    width: 68px;
+    height: 220px;
     position: relative;
-    right: 12px;
-    bottom: 124px;
+    right: -1px;
+    bottom: 252px;
     transition: transform 400ms ease, opacity 400ms ease;
     opacity: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-between;
     justify-content: space-around;
@@ -232,55 +217,30 @@ ul {
 
 .shirtcolorblue {
     background-color: #60A7D8;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin: 0 auto;
+    padding: 5px;
+    margin: 5px;
 }
 
 .shirtcolorpink {
     background-color: pink;
-    margin-top: 10px;
-    margin-right: 5px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .shirtcolororange {
     background-color: orange;
-    margin-left: 5px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .shirtcolorgreen {
     background-color: green;
-    margin-right: 5px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
-.smallboxfour:hover .submenutwo {
+.smallboxthree:hover .submenutwo {
     transform: translate(0, 26px);
     opacity: 100;
-}
-
-.rectanglebox {
-    width: 372px;
-    height: 71px;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer {
-    font-family: sans-serif;
-    color: #60A7D8;
-    font-size: 20px;
-}
-
-.savemytrees {
-    padding-left: 2px;
-    padding-right: 205px;
-}
-
-.naturelover {
-    padding-left: 2px;
-    padding-right: 218px;
-}
-
-.forrestwalk {
-    padding-left: 2px;
-    padding-right: 223px;
 }
