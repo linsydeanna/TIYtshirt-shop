@@ -102,8 +102,9 @@ p:nth-child(2) {
 
 .extralarge {
     font-family: sans-serif;
-    margin: -239px 0px -50px 14px;
+    margin: -200px 0px -50px 4px;
     font-size: 18px;
+    text-align: center;
     color: #60A7D8;
 }
 
@@ -152,7 +153,7 @@ p:nth-child(2) {
     height: 210px;
     position: relative;
     right: 0px;
-    bottom: 256px;
+    bottom: 213px;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -205,7 +206,6 @@ p:nth-child(2) {
     position: relative;
     right: -1px;
     bottom: 226px;
-    transition: transform 400ms ease, opacity 400ms ease;
     opacity: 0;
     display: flex;
     flex-direction: column;
