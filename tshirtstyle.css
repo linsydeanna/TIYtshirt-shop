@@ -1,169 +1,140 @@
 .maincontainer {
-    position: relative;
-    width: 100%;
-}
-
-ul, li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
+  position: relative;
+  width: 100%; }
 
 ul {
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -webkit-justify-content: center;
-}
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-justify-content: center; }
+  ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
 
 .containertwo {
-    display: flex;
-    width: 395px;
-    flex-wrap: wrap;
-    margin: auto;
-    border: 3px #60A7D8 solid;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
+  display: flex;
+  width: 395px;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 3px #60A7D8 solid;
+  margin-right: 1rem;
+  margin-bottom: 1rem; }
 
 .largebox {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    position: relative;
-
-}
+  width: 100%;
+  height: 60%;
+  display: flex;
+  position: relative; }
 
 .shirtpic {
-    width: 83%;
-    height: 83%;
-    padding: 31px;
-}
+  width: 83%;
+  height: 83%;
+  padding: 31px; }
 
 .text {
-    width: 100%;
-    font-family: sans-serif;
-    color: #60A7D8;
-    font-size: 30px;
-    text-align: center;
-}
+  width: 100%;
+  font-family: sans-serif;
+  color: #60A7D8;
+  font-size: 30px;
+  text-align: center; }
 
 p:nth-child(2) {
-    font-size: 22px;
-    padding: 0px 12px 5px 12px;
-}
+  font-size: 22px;
+  padding: 0px 12px 5px 12px; }
 
 .small-with-border {
-    border-left: 3px #60A7D8 solid;
-}
+  border-left: 3px #60A7D8 solid; }
 
 .allsmall {
-    width: 79px;
-    height: 60px;
-    position: relative;
-    border-top: 3px #60A7D8 solid;
-    background-color: white;
-    box-sizing: border-box;
-}
-
-.icons {
+  width: 79px;
+  height: 60px;
+  position: relative;
+  border-top: 3px #60A7D8 solid;
+  background-color: white;
+  box-sizing: border-box; }
+  .allsmall .icons {
     position: absolute;
     padding: 18px 0px 0px 26px;
     font-size: 23px;
-    color: #60A7D8;
-}
+    color: #60A7D8; }
 
 .smallboxone:hover {
-    background-color: #60A7D8;
-    cursor: pointer;
-}
+  background-color: #60A7D8;
+  cursor: pointer; }
 
 .smallboxone:hover .refresh {
-    color: white;
-}
+  color: white; }
 
 .smallboxtwo:hover {
-    background-color: #60A7D8;
-    cursor: pointer;
-}
+  background-color: #60A7D8;
+  cursor: pointer; }
 
 .smallboxtwo:hover .heart {
-    color: white;
-}
+  color: white; }
 
 .extralarge {
-    font-family: sans-serif;
-    margin: -200px 0px -50px 4px;
-    font-size: 18px;
-    text-align: center;
-    color: #60A7D8;
-}
+  font-family: sans-serif;
+  margin: -200px 0px -50px 4px;
+  font-size: 18px;
+  text-align: center;
+  color: #60A7D8; }
 
 .smallboxthree:hover {
-    background-color: #60A7D8;
-    cursor: pointer;
-}
+  background-color: #60A7D8;
+  cursor: pointer; }
 
 .smallboxthree:hover #squareiconblue {
-    color: white;
-}
+  color: white; }
 
 .smallboxfour:hover {
-    background-color: #60A7D8;
-    cursor: pointer;
-}
+  background-color: #60A7D8;
+  cursor: pointer; }
 
 .smallboxfour:hover .extralarge {
-    color: white;
-}
+  color: white; }
 
 .allsquareicons {
-    position: absolute;
-    margin: -218px 5px 150px 23px;
-    font-size: 38px;
-    color: #60A7D8;
-}
+  position: absolute;
+  margin: -218px 5px 150px 23px;
+  font-size: 38px;
+  color: #60A7D8; }
 
 .smallboxfive {
-    cursor: pointer;
-    outline: none;
-}
+  cursor: pointer;
+  outline: none; }
 
 .smallboxfive:hover {
-    background-color: #60A7D8;
-}
+  background-color: #60A7D8; }
 
 .smallboxfive:hover .cart {
-    color: white;
-}
+  color: white; }
 
 .submenuone {
-    border: 3px #60A7D8 solid;
-    background-color: white;
-    width: 68px;
-    height: 210px;
-    position: relative;
-    right: 0px;
-    bottom: 213px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-}
-
-.size {
+  border: 3px #60A7D8 solid;
+  background-color: white;
+  width: 68px;
+  height: 210px;
+  position: relative;
+  right: 0px;
+  bottom: 213px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center; }
+  .submenuone .size {
     width: 100%;
     height: 25%;
     padding: 3px;
@@ -176,74 +147,39 @@ p:nth-child(2) {
     align-items: center;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-}
-
-.tshirtXL {
-    margin: auto;
-}
-
-.tshirtL {
-    margin: auto;
-}
-
-.tshirtM {
-    margin: auto;
-}
-
-.tshirtS {
-    margin: auto;
-}
+    margin: auto; }
 
 .smallboxfour:hover .submenuone {
-    opacity: 100;
-}
+  opacity: 100; }
 
 .submenutwo {
-    border: 3px #60A7D8 solid;
-    background-color: white;
-    width: 68px;
-    height: 220px;
-    position: relative;
-    right: -1px;
-    bottom: 226px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.shirtcolor {
+  border: 3px #60A7D8 solid;
+  background-color: white;
+  width: 68px;
+  height: 220px;
+  position: relative;
+  right: -1px;
+  bottom: 226px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  justify-content: space-around; }
+  .submenutwo .shirtcolor {
     width: 30px;
     height: 30px;
-}
-
-.shirtcolorblue {
-    background-color: #60A7D8;
     margin: 0 auto;
-    padding: 5px;
-}
-
-.shirtcolorpink {
-    background-color: pink;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-.shirtcolororange {
-    background-color: orange;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-.shirtcolorgreen {
-    background-color: green;
-    margin: 0 auto;
-    padding: 5px;
-}
+    padding: 5px; }
+  .submenutwo .shirtcolorblue {
+    background-color: #60A7D8; }
+  .submenutwo .shirtcolorpink {
+    background-color: #e577aa; }
+  .submenutwo .shirtcolororange {
+    background-color: #e5b178; }
+  .submenutwo .shirtcolorgreen {
+    background-color: #7abe93; }
 
 .smallboxthree:hover .submenutwo {
-    opacity: 100;
-}
+  opacity: 100; }

@@ -1,0 +1,234 @@
+$blue:#60A7D8;
+$font-family: sans-serif;
+
+@mixin flex-flow($flex-flow) {
+  -webkit-flex-flow: $flex-flow;
+  -moz-flex-flow: $flex-flow;
+  -ms-flex-flow: $flex-flow;
+  flex-flow: $flex-flow;
+}
+
+.maincontainer {
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    @include flex-flow(row wrap);
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+
+    li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+.containertwo {
+    display: flex;
+    width: 395px;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 3px $blue solid;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.largebox {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    position: relative;
+}
+
+.shirtpic {
+    width: 83%;
+    height: 83%;
+    padding: 31px;
+}
+
+.text {
+    width: 100%;
+    font-family: $font-family;
+    color: $blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+p:nth-child(2) {
+    font-size: 22px;
+    padding: 0px 12px 5px 12px;
+}
+
+.small-with-border {
+    border-left: 3px $blue solid;
+}
+
+.allsmall {
+    width: 79px;
+    height: 60px;
+    position: relative;
+    border-top: 3px $blue solid;
+    background-color: white;
+    box-sizing: border-box;
+
+    .icons {
+        position: absolute;
+        padding: 18px 0px 0px 26px;
+        font-size: 23px;
+        color: $blue;
+    }
+}
+
+.smallboxone:hover {
+    background-color: $blue;
+    cursor: pointer;
+}
+
+.smallboxone:hover .refresh {
+    color: white;
+}
+
+.smallboxtwo:hover {
+    background-color: $blue;
+    cursor: pointer;
+}
+
+.smallboxtwo:hover .heart {
+    color: white;
+}
+
+.extralarge {
+    font-family: $font-family;
+    margin: -200px 0px -50px 4px;
+    font-size: 18px;
+    text-align: center;
+    color: $blue;
+}
+
+.smallboxthree:hover {
+    background-color: #60A7D8;
+    cursor: pointer;
+}
+
+.smallboxthree:hover #squareiconblue {
+    color: white;
+}
+
+.smallboxfour:hover {
+    background-color: $blue;
+    cursor: pointer;
+}
+
+.smallboxfour:hover .extralarge {
+    color: white;
+}
+
+.allsquareicons {
+    position: absolute;
+    margin: -218px 5px 150px 23px;
+    font-size: 38px;
+    color: $blue;
+}
+
+.smallboxfive {
+    cursor: pointer;
+    outline: none;
+}
+
+.smallboxfive:hover {
+    background-color: $blue;
+}
+
+.smallboxfive:hover .cart {
+    color: white;
+}
+
+.submenuone {
+    border: 3px $blue solid;
+    background-color: white;
+    width: 68px;
+    height: 210px;
+    position: relative;
+    right: 0px;
+    bottom: 213px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+
+    .size {
+        width: 100%;
+        height: 25%;
+        padding: 3px;
+        font-family: $font-family;
+        font-size: 30px;
+        color: $blue;
+        border-bottom: 3px $blue solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        margin: auto;
+    }
+}
+
+.smallboxfour:hover .submenuone {
+    opacity: 100;
+}
+
+.submenutwo {
+    border: 3px $blue solid;
+    background-color: white;
+    width: 68px;
+    height: 220px;
+    position: relative;
+    right: -1px;
+    bottom: 226px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: space-around;
+
+    .shirtcolor {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .shirtcolorblue {
+        background-color: $blue;
+    }
+
+    .shirtcolorpink {
+        background-color: #e577aa;
+    }
+
+    .shirtcolororange {
+        background-color: #e5b178;
+    }
+
+    .shirtcolorgreen {
+        background-color: #7abe93;
+    }
+}
+
+.smallboxthree:hover .submenutwo {
+    opacity: 100;
+}
