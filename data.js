@@ -1,38 +1,44 @@
 var data = [
   {
     path: "#thekevin",
-    img: "images/blue-front.png",
+    img: "blue-front.png",
     shirtname: "The Kevin",
     price: "$" + 22,
+    button: "id='buttonone'",
   },
 
   {
-    img: "images/pink-front.png",
+    img: "pink-front.png",
     shirtname: "The Lake",
     price: "$" + 28,
+    button: "id='buttontwo'",
   },
 
   {
-    img: "images/yellow-front.png",
+    img: "yellow-front.png",
     shirtname: "The Ed",
     price: "$" + 32,
+    button: "id='buttonthree'",
   },
 
   {
-    img: "images/blue-front.png",
-    shirtname: "The Brandon"
+    img: "blue-front.png",
+    shirtname: "The Brandon",
     price: "$" + 45,
+    button: "id='buttonfour'",
   },
 
   {
-    img: "images/pink-front.png",
-    shirtname: "The Joe"
+    img: "pink-front.png",
+    shirtname: "The Joe",
     price: "$" + 38,
+    button: "id='buttonfive'",
   },
 
   {
-    img: "images/yellow-front.png",
-    shirtname: "The Bama"
+    img: "yellow-front.png",
+    shirtname: "The Bama",
     price: "$" + 27,
+    button: "id='buttonsix'",
   },
 ]
