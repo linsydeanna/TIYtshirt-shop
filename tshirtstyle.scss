@@ -8,9 +8,10 @@ $font-family: sans-serif;
   flex-flow: $flex-flow;
 }
 
-.maincontainer {
+#maincontainer {
     position: relative;
     width: 100%;
+    display: flex;
 }
 
 ul {
@@ -24,9 +25,10 @@ ul {
     -moz-justify-content: center;
     -ms-justify-content: center;
     -webkit-justify-content: center;
-    margin-left: 0;
-    left: -130px;
-    width: 90%;
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0;
+    width: 75%;
 
     li {
         padding: 0;
@@ -242,6 +244,28 @@ ul {
 }
 
 .price {
+    font-family: $font-family;
+    font-size: 22px;
+    color: $blue;
+}
+
+#cart-area {
+    font-family: $font-family;
+    font-size: 22px;
+    color: $blue;
+    border: 3px $blue solid;
+    padding: 0px 10px 0px 10px;
+    margin: 15px 3px 15px 3px;
+    float: right;
+}
+
+#my-cart {
+    font-family: $font-family;
+    font-size: 22px;
+    color: $blue;
+}
+
+button p {
     font-family: $font-family;
     font-size: 22px;
     color: $blue;

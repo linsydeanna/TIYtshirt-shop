@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="maincontainer">
-    <ul>
+    <ul id="store-items">
 
   <!-- ITEM ONE -->
 
@@ -53,7 +53,7 @@
             <p class="extralarge">XL</p>
           </div>
 
-          <div class="smallboxfive allsmall small-with-border">
+          <div id="buttonone" class="smallboxfive allsmall small-with-border">
             <div class="icons cart">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
@@ -109,7 +109,7 @@
         <p class="extralarge">XL</p>
       </div>
 
-      <div class="smallboxfive allsmall small-with-border">
+      <div id="buttontwo" class="smallboxfive allsmall small-with-border">
         <div class="icons cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
@@ -118,7 +118,7 @@
   </div>
   <div class="shirtinfo">
     <div class="shirtname">The Lake</div>
-    <div class="price">$22</div>
+    <div class="price">$28</div>
   </div>
 </li>
 
@@ -165,7 +165,7 @@
         <p class="extralarge">XL</p>
       </div>
 
-      <div class="smallboxfive allsmall small-with-border">
+      <div id="buttonthree" class="smallboxfive allsmall small-with-border">
         <div class="icons cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
@@ -174,7 +174,7 @@
   </div>
   <div class="shirtinfo">
     <div class="shirtname">The Ed</div>
-    <div class="price">$22</div>
+    <div class="price">$32</div>
   </div>
 </li>
 
@@ -221,7 +221,7 @@
         <p class="extralarge">XL</p>
       </div>
 
-      <div class="smallboxfive allsmall small-with-border">
+      <div id="buttonfour" class="smallboxfive allsmall small-with-border">
         <div class="icons cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
@@ -230,7 +230,7 @@
   </div>
   <div class="shirtinfo">
     <div class="shirtname">The Brandon</div>
-    <div class="price">$22</div>
+    <div class="price">$45</div>
   </div>
 </li>
 <!-- ITEM FIVE -->
@@ -276,7 +276,7 @@
         <p class="extralarge">XL</p>
       </div>
 
-      <div class="smallboxfive allsmall small-with-border">
+      <div id="buttonfive" class="smallboxfive allsmall small-with-border">
         <div class="icons cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
@@ -285,7 +285,7 @@
   </div>
         <div class="shirtinfo">
           <div class="shirtname">The Joe</div>
-          <div class="price">$22</div>
+          <div class="price">$38</div>
         </div>
 </li>
 <!-- ITEM SIX -->
@@ -331,7 +331,7 @@
         <p class="extralarge">XL</p>
       </div>
 
-      <div class="smallboxfive allsmall small-with-border">
+      <div id="buttonsix" class="smallboxfive allsmall small-with-border">
         <div class="icons cart">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
@@ -340,14 +340,42 @@
   </div>
   <div class="shirtinfo">
     <div class="shirtname">The Bama</div>
-    <div class="price">$22</div>
+    <div class="price">$27</div>
   </div>
 </li>
 
 <!--END OF CONTAINERS-->
 
 </ul>
+
+<!-- CART AREA -->
+
+<div id="cart-area">
+
+<h1>MY CART</h1>
+
+<div id="my-cart">
+  <h2>Cart Contents</h2>
+  <ul id="cart-contents"></ul>
+
+  <form>
+    <button id="view-cart">
+      <p>View My Cart</p>
+    </button>
+  </form>
+
+  <p>Total: <span id="total">0</span></p>
+
 </div>
+</div>
+
+<!-- END OF CART -->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="app.js"></script>
+<script src="data.js"></script>
 
 
 </body>
