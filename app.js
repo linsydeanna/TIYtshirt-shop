@@ -79,11 +79,27 @@ var item3 = {
     item: "The Ed",
     price: 32
 }
+var item4 = {
+    item: "The Brandon",
+    price: 45
+}
+var item5 = {
+    item: "The Joe",
+    price: 38
+}
+var item6 = {
+    item: "The Bama",
+    price: 27
+}
+
 var arrayCart = [];
 var total = 0;
 var button1 = document.querySelector("#buttonone");
 var button2 = document.querySelector("#buttontwo");
 var button3 = document.querySelector("#buttonthree");
+var button4 = document.querySelector("#buttonfour");
+var button5 = document.querySelector("#buttonfive");
+var button6 = document.querySelector("#buttonsix");
 
 var addItemCostToCart = function(cost) {
     total += cost;
@@ -118,6 +134,36 @@ button3.addEventListener("click", function(event) {
     list.appendChild(createlistitem);
     addItemCostToCart(item3.price);
     arrayCart.push(item3)
+})
+
+var purchase4 = item4.item + item4.price;
+button4.addEventListener("click", function(event) {
+    var list = document.querySelector("#cart-contents");
+    var createlistitem = document.createElement("li");
+    createlistitem.innerText = purchase4;
+    list.appendChild(createlistitem);
+    addItemCostToCart(item4.price);
+    arrayCart.push(item4)
+})
+
+var purchase5 = item5.item + item5.price;
+button5.addEventListener("click", function(event) {
+    var list = document.querySelector("#cart-contents");
+    var createlistitem = document.createElement("li");
+    createlistitem.innerText = purchase5;
+    list.appendChild(createlistitem);
+    addItemCostToCart(item5.price);
+    arrayCart.push(item5)
+})
+
+var purchase6 = item6.item + item6.price;
+button6.addEventListener("click", function(event) {
+    var list = document.querySelector("#cart-contents");
+    var createlistitem = document.createElement("li");
+    createlistitem.innerText = purchase6;
+    list.appendChild(createlistitem);
+    addItemCostToCart(item6.price);
+    arrayCart.push(item6)
 })
 
 var viewcart = document.querySelector("#view-cart");

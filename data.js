@@ -8,6 +8,7 @@ var data = [
   },
 
   {
+    path: "#thelake",
     img: "pink-front.png",
     shirtname: "The Lake",
     price: "$" + 28,
@@ -15,6 +16,7 @@ var data = [
   },
 
   {
+    path: "#theed",
     img: "yellow-front.png",
     shirtname: "The Ed",
     price: "$" + 32,
@@ -22,6 +24,7 @@ var data = [
   },
 
   {
+    path: "#thebrandon",
     img: "blue-front.png",
     shirtname: "The Brandon",
     price: "$" + 45,
@@ -29,6 +32,7 @@ var data = [
   },
 
   {
+    path: "#thejoe",
     img: "pink-front.png",
     shirtname: "The Joe",
     price: "$" + 38,
@@ -36,6 +40,7 @@ var data = [
   },
 
   {
+    path: "#thebama",
     img: "yellow-front.png",
     shirtname: "The Bama",
     price: "$" + 27,
