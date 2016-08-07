@@ -5,6 +5,9 @@ var data = [
     shirtname: "The Kevin",
     price: "$" + 22,
     button: "id='buttonone'",
+    id: 1,
+    rating: "5 stars",
+    material: "cotton",
   },
 
   {
@@ -13,6 +16,9 @@ var data = [
     shirtname: "The Lake",
     price: "$" + 28,
     button: "id='buttontwo'",
+    id: 2,
+    rating: "3 stars",
+    material: "polyester",
   },
 
   {
@@ -21,6 +27,9 @@ var data = [
     shirtname: "The Ed",
     price: "$" + 32,
     button: "id='buttonthree'",
+    id: 3,
+    rating: "1 star",
+    material: "spandex",
   },
 
   {
@@ -29,6 +38,9 @@ var data = [
     shirtname: "The Brandon",
     price: "$" + 45,
     button: "id='buttonfour'",
+    id: 4,
+    rating: "4 stars",
+    material: "silk",
   },
 
   {
@@ -37,6 +49,9 @@ var data = [
     shirtname: "The Joe",
     price: "$" + 38,
     button: "id='buttonfive'",
+    id: 5,
+    rating: "5 stars",
+    material: "sandpaper",
   },
 
   {
@@ -45,5 +60,8 @@ var data = [
     shirtname: "The Bama",
     price: "$" + 27,
     button: "id='buttonsix'",
-  },
+    id: 6,
+    rating: "5 stars",
+    material: "lace",
+  }
 ]

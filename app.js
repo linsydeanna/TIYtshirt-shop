@@ -1,11 +1,22 @@
 
 $(document).ready(function() {
-    var $storeItems = $('#store-items')
+    var $storeItems = $('#store-items');
+    var $shirtItem = $('#shirt-item');
+    var $extraShirtInfo = $('.extra-shirt-info');
+
+
+
+    location.hash = '#storeview';
+
+    $("#shirt-item").hide();
 
     data.forEach(populate);
+    $(".extra-shirt-info").hide();
+
+    // id="${item.id}"
 
     function populate(item) {
-        var $itemSummary = $(`<li>
+        var $itemSummary = $(`<li class="content" data-index="${item.shirtname}">
       <a href="${item.path}">
         <div class="containertwo">
 
@@ -57,13 +68,37 @@ $(document).ready(function() {
         <div class="shirtinfo">
           <div class="shirtname">${item.shirtname}</div>
           <div class="price">${item.price}</div>
+          <div class="extra-shirt-info">
+          <div>${item.material}</div>
+          <div>${item.rating}</div>
+          <button class="back">BACK TO STORE</button>
+          </div>
         </div>
         </a>
       </li>`);
         $storeItems.append($itemSummary);
     }
 
+// Clicking on individual shirt and the cart
 
+    $('#store-items li').click(function(){
+        var index = $(this).attr('data-index');
+        $('.content').hide();
+        $('li[data-index="'+index+'"]').show();
+        $('.extra-shirt-info').show();
+    });
+
+    $('.back').click(function(){
+      $('.extra-shirt-info').hide();
+      $('.content').show();
+      console.log("click is working");
+    });
+
+    $('#cart-area').click(function(){
+        $('.content').hide();
+        $('#cart-area').show();
+        console.log("click is working");
+    });
 
 // CART js
 

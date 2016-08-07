@@ -217,3 +217,11 @@ button p {
   font-family: sans-serif;
   font-size: 22px;
   color: #60A7D8; }
+
+#shirt-item {
+  background-color: pink;
+  width: 300px;
+  height: 300px; }
+
+.album-collapse {
+  font-size: 40px; }
