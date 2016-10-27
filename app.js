@@ -4,8 +4,6 @@ $(document).ready(function() {
     var $shirtItem = $('#shirt-item');
     var $extraShirtInfo = $('.extra-shirt-info');
 
-
-
     location.hash = '#storeview';
 
     $("#shirt-item").hide();
@@ -66,7 +64,7 @@ $(document).ready(function() {
 
         </div>
         <div class="shirtinfo">
-          <div class="shirtname">${item.shirtname}</div>
+          <div class="shirtname indv-item-view" data-index="${item.shirtname}">${item.shirtname}</div>
           <div class="price">${item.price}</div>
           <div class="extra-shirt-info">
           <div>${item.material}</div>
@@ -81,8 +79,11 @@ $(document).ready(function() {
 
 // Clicking on individual shirt and the cart
 
-    $('#store-items li').click(function(){
+    $('.indv-item-view').click(function(){
+        console.log("click one is working");
         var index = $(this).attr('data-index');
+        console.log("click two is working");
+        console.log(index);
         $('.content').hide();
         $('li[data-index="'+index+'"]').show();
         $('.extra-shirt-info').show();
@@ -171,7 +172,7 @@ button3.addEventListener("click", function(event) {
     arrayCart.push(item3)
 })
 
-var purchase4 = item4.item + item4.price;
+var purchase4 = item4.item + " " + item4.price;
 button4.addEventListener("click", function(event) {
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");

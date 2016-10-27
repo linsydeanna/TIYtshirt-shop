@@ -28,6 +28,11 @@ ul {
     margin-right: 1rem;
     margin-bottom: 1rem; }
 
+#cart-contents {
+  display: flex;
+  flex-direction: column;
+}
+
 .containertwo {
   display: flex;
   width: 300px;
