@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
+  location.hash = '#storeview';
+  
     var $storeItems = $('#store-items');
     var $shirtItem = $('#shirt-item');
     var $extraShirtInfo = $('.extra-shirt-info');
     var $backButton = $('.back-to-store');
-
-    location.hash = '#storeview';
 
     $("#shirt-item").hide();
     $('.back-to-store').hide();
