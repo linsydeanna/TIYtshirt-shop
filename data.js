@@ -7,7 +7,7 @@ var data = [
     button: "id='buttonone'",
     id: 1,
     rating: "5 stars",
-    material: "cotton",
+    material: "Cotton",
   },
 
   {
@@ -18,7 +18,7 @@ var data = [
     button: "id='buttontwo'",
     id: 2,
     rating: "3 stars",
-    material: "polyester",
+    material: "Polyester",
   },
 
   {
@@ -29,7 +29,7 @@ var data = [
     button: "id='buttonthree'",
     id: 3,
     rating: "1 star",
-    material: "spandex",
+    material: "Spandex",
   },
 
   {
@@ -40,7 +40,7 @@ var data = [
     button: "id='buttonfour'",
     id: 4,
     rating: "4 stars",
-    material: "silk",
+    material: "Silk",
   },
 
   {
@@ -51,7 +51,7 @@ var data = [
     button: "id='buttonfive'",
     id: 5,
     rating: "5 stars",
-    material: "sandpaper",
+    material: "Sandpaper",
   },
 
   {
@@ -62,6 +62,6 @@ var data = [
     button: "id='buttonsix'",
     id: 6,
     rating: "5 stars",
-    material: "lace",
+    material: "Lace",
   }
 ]

@@ -3,10 +3,12 @@ $(document).ready(function() {
     var $storeItems = $('#store-items');
     var $shirtItem = $('#shirt-item');
     var $extraShirtInfo = $('.extra-shirt-info');
+    var $backButton = $('.back-to-store');
 
     location.hash = '#storeview';
 
     $("#shirt-item").hide();
+    $('.back-to-store').hide();
 
     data.forEach(populate);
     $(".extra-shirt-info").hide();
@@ -15,7 +17,7 @@ $(document).ready(function() {
 
     function populate(item) {
         var $itemSummary = $(`<li class="content" data-index="${item.shirtname}">
-      <a href="${item.path}">
+      <a class="item-link" href="${item.path}">
         <div class="containertwo">
 
             <div class="largebox">
@@ -35,6 +37,7 @@ $(document).ready(function() {
             </div>
 
             <div class="smallboxthree allsmall small-with-border">
+
               <div class="submenutwo">
                 <div class="shirtcolorblue shirtcolor"></div>
                 <div class="shirtcolorpink shirtcolor"></div>
@@ -66,11 +69,12 @@ $(document).ready(function() {
         <div class="shirtinfo">
           <div class="shirtname indv-item-view" data-index="${item.shirtname}">${item.shirtname}</div>
           <div class="price">${item.price}</div>
-          <div class="extra-shirt-info">
-          <div>${item.material}</div>
-          <div>${item.rating}</div>
-          <button class="back">BACK TO STORE</button>
           </div>
+          <div class="extra-shirt-info">
+          <p>Additional Product Information</p>
+          <div>Material: ${item.material}</div>
+          <div>Rating: ${item.rating}</div>
+          <button class="btn btn-primary back">BACK TO STORE</button>
         </div>
         </a>
       </li>`);
@@ -80,25 +84,40 @@ $(document).ready(function() {
 // Clicking on individual shirt and the cart
 
     $('.indv-item-view').click(function(){
-        console.log("click one is working");
         var index = $(this).attr('data-index');
-        console.log("click two is working");
-        console.log(index);
         $('.content').hide();
         $('li[data-index="'+index+'"]').show();
         $('.extra-shirt-info').show();
+        $('.cart-area').hide();
+        $('#store-items').addClass('indv-shirt');
     });
 
     $('.back').click(function(){
       $('.extra-shirt-info').hide();
       $('.content').show();
-      console.log("click is working");
+      $('.cart-area').addClass("home-cart");
+      $('.cart-area').removeClass("cart-view");
+      $('.cart-area').show();
     });
 
-    $('#cart-area').click(function(){
+    $('.back-to-store').click(function(){
+      $('.extra-shirt-info').hide();
+      $('.content').show();
+      $('.cart-area').addClass("home-cart");
+      $('.cart-area').removeClass("cart-view");
+      $('#view-cart').show();
+      $('.back-to-store').hide();
+      $('#store-items').show();
+    });
+
+    $('#view-cart').click(function(){
         $('.content').hide();
-        $('#cart-area').show();
-        console.log("click is working");
+        $('#store-items').hide();
+        $('#view-cart').hide();
+        $('.back-to-store').show();
+        $('.cart-area').show();
+        $('.cart-area').removeClass("home-cart");
+        $('.cart-area').addClass("cart-view");
     });
 
 // CART js
@@ -139,11 +158,12 @@ var button6 = document.querySelector("#buttonsix");
 
 var addItemCostToCart = function(cost) {
     total += cost;
-    document.getElementById('total').innerHTML = total;
+    document.getElementById('total').innerHTML = "$" + total;
 };
 
-var purchase1 = item1.item + item1.price;
+var purchase1 = item1.item + " $" + item1.price;
 button1.addEventListener("click", function(event) {
+    event.preventDefault();
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
     createlistitem.innerText = purchase1;
@@ -152,8 +172,9 @@ button1.addEventListener("click", function(event) {
     arrayCart.push(item1)
 })
 
-var purchase2 = item2.item + item2.price;
+var purchase2 = item2.item + " $" + item2.price;
 button2.addEventListener("click", function(event) {
+    event.preventDefault();
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
     createlistitem.innerText = purchase2;
@@ -162,7 +183,7 @@ button2.addEventListener("click", function(event) {
     arrayCart.push(item2)
 })
 
-var purchase3 = item3.item + item3.price;
+var purchase3 = item3.item + " $" + item3.price;
 button3.addEventListener("click", function(event) {
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
@@ -172,7 +193,7 @@ button3.addEventListener("click", function(event) {
     arrayCart.push(item3)
 })
 
-var purchase4 = item4.item + " " + item4.price;
+var purchase4 = item4.item + " $" + item4.price;
 button4.addEventListener("click", function(event) {
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
@@ -182,7 +203,7 @@ button4.addEventListener("click", function(event) {
     arrayCart.push(item4)
 })
 
-var purchase5 = item5.item + item5.price;
+var purchase5 = item5.item + " $" + item5.price;
 button5.addEventListener("click", function(event) {
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
@@ -192,7 +213,7 @@ button5.addEventListener("click", function(event) {
     arrayCart.push(item5)
 })
 
-var purchase6 = item6.item + item6.price;
+var purchase6 = item6.item + " $" + item6.price;
 button6.addEventListener("click", function(event) {
     var list = document.querySelector("#cart-contents");
     var createlistitem = document.createElement("li");
@@ -206,6 +227,7 @@ var viewcart = document.querySelector("#view-cart");
 viewcart.addEventListener("click", function(event) {
     console.log('cart total' + total + arrayCart);
 });
+
 });
 
 //   /*

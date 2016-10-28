@@ -13,14 +13,8 @@ ul {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -webkit-justify-content: center;
-  margin-left: 10px;
-  margin-right: 0;
-  padding: 0;
-  width: 75%; }
+  margin: 25px 0px 0px 50px;
+  padding: 0;}
   ul li {
     padding: 0;
     margin: 0;
@@ -31,6 +25,7 @@ ul {
 #cart-contents {
   display: flex;
   flex-direction: column;
+  margin-left: 0;
 }
 
 .containertwo {
@@ -44,6 +39,7 @@ ul {
   width: 100%;
   height: 60%;
   display: flex;
+  justify-content: center;
   position: relative; }
 
 .shirtpic {
@@ -62,10 +58,18 @@ ul {
   background-color: white;
   box-sizing: border-box; }
   .allsmall .icons {
-    position: absolute;
-    padding: 18px 0px 0px 19px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
     font-size: 23px;
     color: #60A7D8; }
+
+.fa-square:before {
+  margin-left: -2px;
+}
+    a:hover {
+      text-decoration: none;
+    }
 
 .smallboxone:hover {
   background-color: #60A7D8;
@@ -83,7 +87,7 @@ ul {
 
 .extralarge {
   font-family: sans-serif;
-  margin: -198px 0px -40px 4px;
+  margin: 15px 0px -38px 1px;
   font-size: 18px;
   text-align: center;
   color: #60A7D8; }
@@ -92,7 +96,7 @@ ul {
   background-color: #60A7D8;
   cursor: pointer; }
 
-.smallboxthree:hover #squareiconblue {
+.smallboxthree:hover .fa-square {
   color: white; }
 
 .smallboxfour:hover {
@@ -100,12 +104,11 @@ ul {
   cursor: pointer; }
 
 .smallboxfour:hover .extralarge {
-  color: white; }
+  color: white;
+  margin: -195px 0px 0px 1px;}
 
 .allsquareicons {
-  position: absolute;
-  margin: -218px 25px 150px 14px;
-  padding-right: 10px;
+  margin: 0px 2px 0px 14px;
   font-size: 38px;
   color: #60A7D8; }
 
@@ -120,20 +123,8 @@ ul {
   color: white; }
 
 .submenuone {
-  border: 3px #60A7D8 solid;
-  background-color: white;
-  width: 68px;
-  height: 210px;
-  position: relative;
-  right: 0px;
-  bottom: 213px;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-between;
-  align-content: center;
-  text-align: center; }
+  display: none;
+ }
   .submenuone .size {
     width: 100%;
     height: 25%;
@@ -150,23 +141,22 @@ ul {
     margin: auto; }
 
 .smallboxfour:hover .submenuone {
-  opacity: 100; }
-
-.submenutwo {
   border: 3px #60A7D8 solid;
   background-color: white;
   width: 68px;
-  height: 220px;
+  height: 210px;
   position: relative;
-  right: -1px;
-  bottom: 226px;
-  opacity: 0;
+  right: 6px;
+  bottom: 209px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-content: space-between;
   align-content: center;
-  justify-content: space-around; }
+  text-align: center; }
+
+.submenutwo {
+  display: none; }
   .submenutwo .shirtcolor {
     width: 30px;
     height: 30px;
@@ -182,7 +172,20 @@ ul {
     background-color: #7abe93; }
 
 .smallboxthree:hover .submenutwo {
-  opacity: 100; }
+  border: 3px #60A7D8 solid;
+  background-color: white;
+  width: 68px;
+  height: 220px;
+  position: absolute;
+  z-index: 10;
+  right: -6px;
+  bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  justify-content: space-around; }
 
 .shirtinfo {
   display: flex;
@@ -197,21 +200,48 @@ ul {
 .shirtname {
   font-family: sans-serif;
   font-size: 22px;
-  color: #60A7D8; }
+  color: #60A7D8;}
+
+  a {
+  text-decoration: none;
+  }
 
 .price {
   font-family: sans-serif;
   font-size: 22px;
   color: #60A7D8; }
 
-#cart-area {
+.home-cart {
+  font-family: sans-serif;
+  font-size: 22px;
+  color: #60A7D8;
+  width: 40%;
+  border: 3px #60A7D8 solid;
+  padding: 0px 10px 0px 10px;
+  margin: 25px 50px 15px 3px;
+  float: right; }
+
+.cart-view {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
   font-family: sans-serif;
   font-size: 22px;
   color: #60A7D8;
   border: 3px #60A7D8 solid;
-  padding: 0px 10px 0px 10px;
-  margin: 15px 3px 15px 3px;
-  float: right; }
+}
+
+#view-cart {
+  margin-bottom: 10px;
+}
+
+.cart-view h1 {
+  text-align: center;
+}
+
+.home-cart h1 {
+  text-align: center;
+}
 
 #my-cart {
   font-family: sans-serif;
@@ -221,12 +251,31 @@ ul {
 button p {
   font-family: sans-serif;
   font-size: 22px;
-  color: #60A7D8; }
+  color: white;
+  margin-bottom: 0; }
 
 #shirt-item {
   background-color: pink;
   width: 300px;
   height: 300px; }
 
+  .extra-shirt-info {
+  font-family: sans-serif;
+  color: #60A7D8;
+  }
+
+  .largebox {
+    cursor: default;
+  }
+
+  .indv-shirt {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
 .album-collapse {
   font-size: 40px; }
+
+  a:hover, a {
+    text-decoration: none !important;
+  }
